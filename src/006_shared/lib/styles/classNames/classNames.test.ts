@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom';
-import {classNames} from './classNames';
+import {classNames} from '006_shared/lib/styles/classNames/classNames';
 
 describe('classNames', () => {
     it('app class', () => {
