@@ -6,7 +6,7 @@ interface MainPageProps {
     className?: string;
 }
 
-export const MainPage: FC<MainPageProps> = ({className = ''}) => {
+const MainPage: FC<MainPageProps> = ({className = ''}) => {
 
     return (
         <div className={classNames(s.MainPage, {}, [className])}>
@@ -14,3 +14,5 @@ export const MainPage: FC<MainPageProps> = ({className = ''}) => {
         </div>
     );
 };
+
+export default MainPage;

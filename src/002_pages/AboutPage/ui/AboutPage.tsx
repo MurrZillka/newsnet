@@ -8,7 +8,7 @@ interface AboutPageProps {
     className?: string;
 }
 
-export const AboutPage: FC<AboutPageProps> = ({className = ''}) => {
+const AboutPage: FC<AboutPageProps> = ({className = ''}) => {
 
     // const {t} = useTranslation()
 
@@ -18,3 +18,5 @@ export const AboutPage: FC<AboutPageProps> = ({className = ''}) => {
         </div>
     );
 };
+
+export default AboutPage;
