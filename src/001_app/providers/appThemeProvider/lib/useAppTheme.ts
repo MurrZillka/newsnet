@@ -1,15 +1,14 @@
-import {appThemeContext, AppThemes} from './themeContext';
+import {appThemeContext, AppThemes} from '001_app/providers/appThemeProvider/lib/appThemeContext';
 import {useContext} from 'react';
 
-
-const LOCAL_STORAGE_APP_THEME_KEY = 'theme';
+export const LOCAL_STORAGE_APP_THEME_KEY = 'theme';
 
 interface UseThemeResult {
     appTheme: AppThemes;
     toggleAppTheme: () => void;
 }
 
-export function useTheme(): UseThemeResult {
+export function useAppTheme(): UseThemeResult {
     const context = useContext(appThemeContext);
 
     if (!context) {
