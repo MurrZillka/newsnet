@@ -19,8 +19,8 @@ export const Navbar:FC<NavbarProps> = ({className = ''}) => {
                 <Link className={s.link} to="/about">{t('О компании')}</Link>
             </div>
             <div className={s.links}>
-                <Link className={s.link} to="/">{t('Войти')}</Link>
-                <Link className={s.link} to="/about">{t('Регистрация')}</Link>
+                <button className={s.button}>{t('Войти')}</button>
+                <button className={s.button}>{t('Регистрация')}</button>
             </div>
         </nav>
     );
