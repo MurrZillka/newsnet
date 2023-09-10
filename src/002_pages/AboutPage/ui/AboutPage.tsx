@@ -1,8 +1,7 @@
 import {FC} from 'react';
 import {classNames} from '006_shared/lib/styles';
 import s from './AboutPage.module.scss'
-
-// import {useTranslation} from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 interface AboutPageProps {
     className?: string;
@@ -10,11 +9,11 @@ interface AboutPageProps {
 
 const AboutPage: FC<AboutPageProps> = ({className = ''}) => {
 
-    // const {t} = useTranslation()
+    const {t} = useTranslation('aboutPage')
 
     return (
         <div className={classNames(s.AboutPage, {}, [className])}>
-            <h1>About Page</h1>
+            <h1>{t('О компании')}</h1>
         </div>
     );
 };
